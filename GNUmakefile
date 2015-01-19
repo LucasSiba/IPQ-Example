@@ -1,7 +1,7 @@
 SXE_DEBUG ?= 0
 
 CPPFLAGS  = # include paths, '.' is implicit
-CFLAGS    = -O9 -DSXE_DEBUG=$(SXE_DEBUG) -g -rdynamic -fstack-protector -fno-strict-aliasing -Wall -Werror -Wextra -Wcast-align -Wcast-qual -Wformat=2 -Wformat-security -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wredundant-decls -Wshadow -Wstrict-prototypes -Wno-unknown-pragmas -Wunused -Wno-unused-result -Wwrite-strings -Wno-attributes
+CFLAGS    = -O2 -DSXE_DEBUG=$(SXE_DEBUG) -g -rdynamic -fstack-protector -fno-strict-aliasing -Wall -Werror -Wextra -Wcast-align -Wcast-qual -Wformat=2 -Wformat-security -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wredundant-decls -Wshadow -Wstrict-prototypes -Wno-unknown-pragmas -Wunused -Wno-unused-result -Wwrite-strings -Wno-attributes
 LDFLAGS   = # linker options (like -L for library paths)
 LDLIBS    = -lm -lipq # libraries to link with
 
